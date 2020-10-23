@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:minHeight="100dp"
+        android:background="@android:color/white" >
+
+
+        <TextView
+            android:id="@+id/textViewType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Line 1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewWhom"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_toEndOf="@+id/textViewType"-->
+<!--            android:layout_toRightOf="@+id/textViewType"-->
+<!--            android:text="Line 2"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="italic" />-->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="Date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1231245"
+            android:textColor="@android:color/black"/>
+        <RelativeLayout
+            android:id="@+id/LinearLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewType">
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewType"
+                android:hint="Description"
+                android:minHeight="80dp"
+                android:text="sadka"/>
+
+            <TextView
+                android:id="@+id/textViewAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textViewDesc"
+                android:layout_toRightOf="@+id/textViewDesc"
+                android:gravity="center"
+                android:hint="amount"
+                android:text="1123"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/image_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_edit" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/LinearLayoutMain"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

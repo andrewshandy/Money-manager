@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Money manager</string>
+    
+    <string-array name="Types">
+        <item>Credit</item>
+        <item>Loan</item>
+        <item>Taxes</item>
+        <item>Utilities</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="Сurrencies">
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>₽</item>
+    </string-array>
+</resources>
